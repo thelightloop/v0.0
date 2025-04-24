@@ -9,29 +9,24 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">.NET Developer</h3>
-            <p className="text-gray-400">Building robust enterprise solutions</p>
-          </div>
-
-          <div className="mb-6 md:mb-0">
-            <SocialLinks />
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-gray-400"
-          >
-            © {currentYear} .NET Developer Portfolio. Made with <Heart className="inline-block w-4 h-4 text-red-500" />{" "}
-            in Nepal
-          </motion.p>
-        </div>
+      <div className="mt-4 pt-4 text-center">
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="text-gray-400"
+        >
+          © {currentYear} – <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-purple-400">
+            @thelightloop</span> <br />
+          Keep building. Keep breaking. Keep becoming.
+          <br />
+          Crafted in Nepal{" "}
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"
+            alt="Nepal Flag"
+            className="inline-block w-3 h-3 ml-1 align-text-center"
+          />
+        </motion.p>
       </div>
     </footer>
   )

@@ -86,7 +86,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Email</h4>
-                  <p className="text-gray-700">contact@example.com</p>
+                  <p className="text-gray-700">thelightloop@gmail.com</p>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-4">Follow Me</h4>

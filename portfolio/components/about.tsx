@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Code2, Database, Server } from "lucide-react"
 
+
 export default function About() {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -12,15 +13,18 @@ export default function About() {
   const skills = [
     { name: ".NET Core", icon: <Server className="w-5 h-5" /> },
     { name: "C#", icon: <Code2 className="w-5 h-5" /> },
-    { name: "ASP.NET MVC", icon: <Code2 className="w-5 h-5" /> },
-    { name: "Entity Framework", icon: <Database className="w-5 h-5" /> },
-    { name: "SQL Server", icon: <Database className="w-5 h-5" /> },
-    { name: "Azure", icon: <Server className="w-5 h-5" /> },
-    { name: "RESTful APIs", icon: <Code2 className="w-5 h-5" /> },
-    { name: "Flutter", icon: <Code2 className="w-5 h-5" /> },
+    { name: "React", icon: <Code2 className="w-5 h-5" /> },
+    { name: "Js", icon: <Code2 className="w-5 h-5" /> },
+    { name: "Docker", icon: <Server className="w-5 h-5" /> },
+    { name: "Kubernetes", icon: <Server className="w-5 h-5" /> },
     { name: "Microservices", icon: <Server className="w-5 h-5" /> },
     { name: "DevOps", icon: <Server className="w-5 h-5" /> },
-  ]
+    { name: "PostgreSQL", icon: <Database className="w-5 h-5" /> },
+    { name: "Jenkins", icon: <Server className="w-5 h-5" /> }
+
+
+  ];
+
 
   return (
     <section id="about" className="py-20 bg-white">

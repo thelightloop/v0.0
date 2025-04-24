@@ -5,13 +5,15 @@ import { Github, Linkedin, Twitter, Facebook, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function SocialLinks() {
+  const userName = "thelightloop";
   const socialLinks = [
-    { name: "GitHub", icon: <Github className="w-5 h-5" />, url: "https://github.com/" },
-    { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "https://linkedin.com/" },
-    { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "https://twitter.com/" },
-    { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "https://facebook.com/" },
-    { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com/" },
-  ]
+    { name: "GitHub", icon: <Github className="w-5 h-5" />, url: `https://github.com/${userName}` },
+    { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: `https://www.linkedin.com/in/${userName}` },
+    { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: `https://twitter.com/${userName}` },
+    { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: `https://facebook.com/${userName}` },
+    { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: `https://instagram.com/${userName}` },
+  ];
+
 
   const container = {
     hidden: { opacity: 0 },

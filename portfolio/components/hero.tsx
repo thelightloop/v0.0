@@ -45,12 +45,21 @@ export default function Hero() {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <h2 className="text-xl md:text-2xl font-medium text-blue-400 mb-2">Hello, I'm</h2>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
-                .NET Developer
+
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-teal-400">
+                <span className="font-devanagari text-4xl">
+                  ॥ अंतः अस्ति प्रारंभः ॥
+                </span>
               </span>
             </h1>
+            <h3 className="text-4xl md:text-6xl font-bold mb-4">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
+                <span className="text-2xl">
+                  Hi, I'm Prakash BL Dhakal
+                </span>
+              </span>
+            </h3>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Building robust enterprise solutions and innovative applications
             </p>
@@ -62,8 +71,8 @@ export default function Hero() {
               >
                 <a href="#projects">View My Work</a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
-                <a href="#contact">Contact Me</a>
+              <Button size="lg" variant="outline" className="bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white" asChild>
+                <a href="#contact">Message</a>
               </Button>
             </div>
           </motion.div>
